@@ -7,3 +7,13 @@ main:
     pdf: https://aclanthology.org/anthology-files/anthology-files/pdf/findings/2025.findings-emnlp.795.pdf
     bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:JO3YdU0Li0AJ:scholar.google.com/&output=citation&scisdr=Cl8_zhLNEIGPqhYnJP0:AFtJQiwAAAAAaakhPP0wvY1yXuFUt1U7NaIcMrs&scisig=AFtJQiwAAAAAaakhPJ9nVqN6cIdyYfBektPgtLY&scisf=4&ct=citation&cd=-1&hl=zh-CN
     notes: Accept
+
+
+  - title: "TASE: Token Awareness and Structured Evaluation for Multilingual Language Models"
+    authors: Chenzhuo Zhao, Xinda Wang, Yue Huang, Junting Lu, <strong>Ziqian Liu*</strong>
+    conference_short: AAAI 26
+    conference: Association for the Advancement of Artificial Intelligence <strong>(AAAI)</strong>, 2026.
+    pdf: https://arxiv.org/pdf/2508.05468
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:suzafhvsXxcJ:scholar.google.com/&output=citation&scisdr=Cl8_zhLNEIGPqhYl9dw:AFtJQiwAAAAAaakj7dz7Nqt271yUkaF2RFRRoNw&scisig=AFtJQiwAAAAAaakj7S-ddGs70yARDS6r6gyB5I0&scisf=4&ct=citation&cd=-1&hl=zh-CN
+    notes: Accept
+
