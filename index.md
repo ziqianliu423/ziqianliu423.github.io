@@ -27,6 +27,7 @@ I am a first-year Ph.D. student in the [School of Computing and Data Science](ht
 ## Awards
 
 - Full Postgraduate Scholarship of HKU, 2026-2030
+- Stars of Tommorrow in MSRA, 2026
 - CSC Scholarship, China-Canada exchange student, 2023
 - First Prize Scholarship of NWPU, 2022
 - Third Prize, IEEE ICRA DJI Robomaster AI Challenge, 2022
