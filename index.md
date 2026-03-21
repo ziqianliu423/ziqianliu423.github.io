@@ -9,6 +9,7 @@ I am a first-year Ph.D. student in the [School of Computing and Data Science](ht
 ## Research Interests
 
 - **Network and System Reliability:** Internet monitoring, live streaming network observability
+- **Hyper edge infrastructure:** Peer-to-peer content delivery network
 
 ## News
 
