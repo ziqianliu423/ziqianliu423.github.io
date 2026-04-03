@@ -13,8 +13,13 @@ I am a first-year Ph.D. student in the [School of Computing and Data Science](ht
 
 ## News
 
+- **[Apr. 2026]** Open-sourced EditDeck, a PPT generation framework: [https://github.com/Morgensonne/EditDeck](https://github.com/Morgensonne/EditDeck)
 - **[Feb. 2026]** Join HKU CDS as a PhD student.
 - **[Dec. 2025]** Our paper about Internet monitoring is accepted to NSDI 2026.
+
+## Projects
+
+- **[EditDeck](https://github.com/Morgensonne/EditDeck)** - A PPT generation framework that enables programmatic creation and editing of presentation slides. Supports template-based generation, dynamic content insertion, and export to multiple formats.
 
 {% include_relative _includes/publications.md %}
 
