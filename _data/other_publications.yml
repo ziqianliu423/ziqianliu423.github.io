@@ -8,7 +8,7 @@ main:
     conference: The 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026.
     pdf: https://openreview.net/forum?id=wTJVGXG27p
     bibtex: 
-    notes: Accept
+    notes: Accept, Oral
     
   - title: "Pooling Engram Conditional Memory in Large Language Models using CXL"
     authors: Ruiyang Ma, Teng Ma, Zhiyuan Su, Hantian Zha, Xinpeng Zhao, Xuchun Shang, Xingrui Yi, Zheng Liu, Zhu Cao, An Wu, Zhichong Dou, <strong>Ziqian Liu</strong>, Daikang Kuang, Guojie Luo
