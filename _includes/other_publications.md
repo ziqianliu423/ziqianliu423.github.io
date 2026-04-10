@@ -1,6 +1,6 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">Other Publications</h2>
 
-<div class="publications" style="margin-top: 0.5rem;">                                                                                         <ol class="bibliography" style="margin-top: 0;">  
+<div class="publications" style="margin-top: 3.0rem;">                                                                                         <ol class="bibliography" style="margin-top: 0;">  
   
 {% for link in site.data.other_publications.main %}
 
