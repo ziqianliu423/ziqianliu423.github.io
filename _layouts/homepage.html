@@ -206,6 +206,12 @@
           </small>
         </p>
         {% endif %}
+
+        {% if site.visitor_map_id %}
+        <div id="visitor-map-widget">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d={{ site.visitor_map_id }}&amp;cl={{ site.visitor_map_color | default: 'ffffff' }}&amp;w={{ site.visitor_map_width | default: 'a' }}"></script>
+        </div>
+        {% endif %}
       </section>
 
       <footer>
