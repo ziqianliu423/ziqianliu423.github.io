@@ -37,7 +37,7 @@
     {% endif %}
 
     <style>
-      /* --- 桌面端与全局通用样式 --- */
+      /* --- 桌面端与全局通用布局 --- */
       .wrapper {
         width: 90% !important;
         max-width: 1300px !important;
@@ -61,25 +61,44 @@
         margin-left: 0 !important;
       }
 
-      /* --- 桌面端头像：圆角矩形，稍微小一点 --- */
-      .image.avatar {
-        display: inline-block !important;
-        width: 170px !important;
-        height: 220px !important;
-        border-radius: 18px !important;
-        overflow: hidden !important;
-        line-height: 0 !important;
+      /* --- 桌面端头像：强制四个角都是圆角矩形 --- */
+      @media (min-width: 769px) {
+        header a.image.avatar {
+          display: block !important;
+          width: 165px !important;
+          height: 215px !important;
+          margin: 0 0 24px 0 !important;
+
+          border-radius: 18px !important;
+          overflow: hidden !important;
+          clip-path: inset(0 round 18px) !important;
+
+          background: none !important;
+          box-shadow: none !important;
+        }
+
+        header a.image.avatar::before,
+        header a.image.avatar::after {
+          display: none !important;
+          content: none !important;
+        }
+
+        header a.image.avatar img {
+          display: block !important;
+          width: 100% !important;
+          height: 100% !important;
+
+          object-fit: cover !important;
+          object-position: center center !important;
+
+          border-radius: 18px !important;
+          clip-path: inset(0 round 18px) !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
       }
 
-      .image.avatar img {
-        display: block !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        border-radius: 18px !important;
-      }
-
-      /* --- 移动端适配：保持原来逻辑，不单独改头像大小 --- */
+      /* --- 移动端适配：不改头像，保持原主题移动端效果 --- */
       @media (max-width: 768px) {
         .wrapper {
           width: 95% !important;
@@ -194,8 +213,13 @@
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      m=s.createElement(o),
+      a.async=1;
+      a.src='https://www.google-analytics.com/analytics.js';
+      m=document.getElementsByTagName(o)[0];
+      m.parentNode.insertBefore(a,m);
+      })(window,document,'script','ga');
+
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
