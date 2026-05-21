@@ -52,6 +52,7 @@
         margin-left: 0 !important;
         position: relative !important;
         flex-shrink: 0;
+        text-align: center !important;
       }
 
       section {
@@ -61,13 +62,15 @@
         margin-left: 0 !important;
       }
 
-      /* --- 桌面端头像：强制四个角都是圆角矩形 --- */
+      /* --- 桌面端头像：圆角矩形 + 居中 --- */
       @media (min-width: 769px) {
         header a.image.avatar {
           display: block !important;
           width: 165px !important;
           height: 215px !important;
-          margin: 0 0 24px 0 !important;
+
+          /* 关键：头像居中 */
+          margin: 0 auto 24px auto !important;
 
           border-radius: 18px !important;
           overflow: hidden !important;
@@ -75,6 +78,7 @@
 
           background: none !important;
           box-shadow: none !important;
+          padding: 0 !important;
         }
 
         header a.image.avatar::before,
@@ -93,12 +97,13 @@
 
           border-radius: 18px !important;
           clip-path: inset(0 round 18px) !important;
+
           margin: 0 !important;
           padding: 0 !important;
         }
       }
 
-      /* --- 移动端适配：不改头像，保持原主题移动端效果 --- */
+      /* --- 移动端适配：保持移动端布局，不额外改头像大小 --- */
       @media (max-width: 768px) {
         .wrapper {
           width: 95% !important;
@@ -111,7 +116,7 @@
           width: 100% !important;
           padding-right: 0 !important;
           margin-bottom: 20px;
-          text-align: center;
+          text-align: center !important;
         }
 
         section {
@@ -213,12 +218,8 @@
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.createElement(o),
-      a.async=1;
-      a.src='https://www.google-analytics.com/analytics.js';
-      m=document.getElementsByTagName(o)[0];
-      m.parentNode.insertBefore(a,m);
-      })(window,document,'script','ga');
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
