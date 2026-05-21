@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
+
     {% if site.keywords %}
     <meta name="keywords" content="{{ site.keywords }}">
     {% endif %}
+
     {% if site.canonical %}
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
+
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+
     {% if site.font == "Sans Serif" %}
     <link rel="stylesheet" href="./assets/css/font_sans_serif.css">
     {% else %}
     <link rel="stylesheet" href="./assets/css/font.css">
     {% endif %}
+
     {% if site.auto_dark_mode %}
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/publications.css">
@@ -35,14 +40,14 @@
       /* --- 桌面端与全局通用样式 --- */
       .wrapper {
         width: 90% !important;
-        max-width: 1300px !important; 
+        max-width: 1300px !important;
         margin: 0 auto;
         padding-left: 0 !important;
         display: flex;
       }
 
       header {
-        width: 250px !important; 
+        width: 250px !important;
         padding-right: 15px !important;
         margin-left: 0 !important;
         position: relative !important;
@@ -56,15 +61,25 @@
         margin-left: 0 !important;
       }
 
-      /* --- 桌面端头像样式：圆角长方形 + 放大 --- */
-      .image.avatar img {
-        width: 200px !important;
-        height: 250px !important;
-        object-fit: cover;
-        border-radius: 20px !important;
+      /* --- 桌面端头像：圆角矩形，稍微小一点 --- */
+      .image.avatar {
+        display: inline-block !important;
+        width: 170px !important;
+        height: 220px !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+        line-height: 0 !important;
       }
 
-      /* --- 移动端适配：保持原来逻辑，不改头像大小 --- */
+      .image.avatar img {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 18px !important;
+      }
+
+      /* --- 移动端适配：保持原来逻辑，不单独改头像大小 --- */
       @media (max-width: 768px) {
         .wrapper {
           width: 95% !important;
@@ -92,9 +107,10 @@
   <body>
     <div class="wrapper">
       <header>
-       
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
+        <a class="image avatar">
+          <img src="{{ site.avatar }}" alt="avatar" />
+        </a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
@@ -105,7 +121,9 @@
         {% endif %}
 
         {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        <a href="{{ site.affiliation_link }}" rel="noopener">
+          <autocolor>{{ site.affiliation }}</autocolor>
+        </a>
         <br>
         {% endif %}
 
@@ -156,12 +174,17 @@
         <br>
 
         {% if site.enable_footnote %}
-        <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+        <p>
+          <small>
+            Powered by Jekyll and
+            <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a>
+            theme.
+          </small>
+        </p>
         {% endif %}
       </section>
 
       <footer>
-       
       </footer>
     </div>
 
