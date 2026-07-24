@@ -3,7 +3,8 @@
 <div class="publications">
   <ol class="bibliography" style="padding-left: 0; list-style: none; margin: 0;">
     {% for link in site.data.other_publications.main %}
-    <li style="margin-bottom: 1.5rem;">
+    <!-- 将 margin-bottom 调小为 0.75rem -->
+    <li style="margin-bottom: 1.0rem;">
       <div class="pub-row row">
         <!-- 左侧：图片 / 标签栏 -->
         <div class="col-sm-3 abbr" style="position: relative; padding-right: 15px; padding-left: 15px;">
@@ -20,13 +21,13 @@
           <div class="title" style="font-weight: bold;">
             <a href="{{ link.pdf }}">{{ link.title }}</a>
           </div>
-          <div class="author" style="margin-top: 0.25rem;">{{ link.authors }}</div>
-          <div class="periodical" style="margin-top: 0.25rem;">
+          <div class="author" style="margin-top: 0.2rem;">{{ link.authors }}</div>
+          <div class="periodical" style="margin-top: 0.2rem;">
             <em>{{ link.conference }}</em>
           </div>
           
           <!-- 按钮与链接列表 -->
-          <div class="links" style="margin-top: 0.5rem;">
+          <div class="links" style="margin-top: 0.4rem;">
             {% if link.pdf %}
               <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size: 12px; margin-right: 4px;">PDF</a>
             {% endif %}
