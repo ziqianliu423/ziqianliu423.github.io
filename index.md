@@ -4,12 +4,12 @@ layout: homepage
 
 ## About Me
 
-I am a first-year Ph.D. student in the [School of Computing and Data Science](https://www.cds.hku.hk/) at [The University of Hong Kong](https://www.hku.hk/), advised by Prof. [Yiming Qiu](https://yimingqiu.me/). My research primarily focuses on datacenter networks, the Internet, edge networks, and video live streaming. Previously, I received my B.E. in Computer Science and Technology from Northwestern Polytechnical University.
+I am a first-year Ph.D. student in the [School of Computing and Data Science](https://www.cds.hku.hk/) at [The University of Hong Kong](https://www.hku.hk/), advised by Prof. [Yiming Qiu](https://yimingqiu.me/). My research primarily focuses on application-specific network, the Internet,video live streaming, agentic system. Previously, I received my B.E. in Computer Science and Technology from Northwestern Polytechnical University.
 
 ## Research Interests
 
 - **Network and System Reliability:** Internet monitoring, live streaming network observability
-- **Hyper edge infrastructure:** Peer-to-peer content delivery network
+- **Application-Specific Network:** AI-native transport optimization
 
 ## News
 
