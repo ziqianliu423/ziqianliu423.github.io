@@ -1,5 +1,16 @@
 main:
 
+
+  - title: "The Model in the Middle: Toward AI-Native Real-Time Communication"
+    authors: <strong>Ziqian Liu</strong>, Minghao Li, Yiming Qiu
+    conference_short: Arxiv 26
+    conference: <strong>Arxiv</strong>, 2026.
+    pdf: https://arxiv.org/pdf/2607.25792
+    bibtex: 
+    image: ./assets/img/conflux.jpg
+
+
+
   - title: "Horizon: A Hyper-Edge Observability Engine for Live Streaming Networks"
     authors: <strong>Ziqian Liu</strong>, Daqian Ding, Rui Han, Zhendong Xie, Aifang Xu, Changqian Wang, Kefei Liu, Jialin Li, Yunming Xiao, Heming Cui, Yiming Qiu
     conference_short: Sigcomm 26
