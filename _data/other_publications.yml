@@ -1,5 +1,10 @@
 main:
 
+  - title: "Towards a Systems Foundation for Agentic Cloud Management"
+    authors: Minghao Li, <strong>Ziqian Liu</strong>, Ziyu Mao, Daqian Ding, Yu Kang, Qingwei Lin, Tianyin Xu, Yiming Qiu
+    conference_short: Arxiv 26
+    conference: <strong>Arxiv</strong>, 2026.
+    pdf: https://arxiv.org/pdf/2607.25883
 
   - title: "SkyRDMA: Fully Offloaded Cloud RDMA Virtualization"
     authors: Yibo Huang, Lizhou Gao, Liang Wang, <strong>Ziqian Liu</strong>, Chengxuan Pei, Yaowen Guo, Hongchen Ren, Xin Li, Junpeng Zhang, Chao Pei, Chongyang Hong, Zhaoxun Zhou, Shihan Lin, Yiming Qiu, Yunming Xiao, Congcong Miao
