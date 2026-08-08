@@ -11,12 +11,14 @@ main:
     conference_short: NSDI 27
     conference: The 24th USENIX Symposium on Networked Systems Design and Implementation <strong>NSDI</strong>, 2027.
     notes: Accept
+    pdf: https://www.usenix.org/conference/nsdi27
 
   - title: "Towards Learned Switch Behavior Modeling"
     authors: Daqian Ding, <strong>Ziqian Liu</strong>, Zhixiong Niu, Ziyu Mao, Jingyu Wang, Yongqiang Xiong, Yiming Qiu
     conference_short: APNET 26
     conference: The 10th Asia-Pacific Workshop on Networking  <strong>(APNET)</strong>, 2026.
     notes: Accept
+    pdf: https://dl.acm.org/doi/10.1145/3820441.3820465
 
   - title: "Gradient-Guided Multi-Judge Prompt Optimization"
     authors: Chenzhuo Zhao, Xinda Wang, Pu Zhao, Yue Huang, Junting Lu, <strong>Ziqian Liu</strong>, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang
